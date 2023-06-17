@@ -1,0 +1,561 @@
+//Переменные для цвета
+
+//Переменная цвета для хедера, активная вкладка
+$colorbrowntext_1: #100e07de;
+
+//Переменная цвета для хедера, неактивная вкладка
+$colorbrowntext_2: #131108;
+
+//Переменная цвета для заголовка 1
+$colorbrowntext_3: #161202;
+
+//Переменная цвета для текста в блоке 1
+$colorbrowntext_4: #1a1919;
+
+//Переменная цвета для фона светло-коричневый
+$colorbrownblock: #f0eeea;
+
+//Переменная для синего цвета
+$colorblue_1: #405a69;
+
+//Переменная для белого цвета
+$white: #ffffff;
+
+//Переменная для серого цвета
+$grey: #c5c1c1;
+
+//Переменная для голубого цвета
+$colorblue_2: #afd1d1;
+
+//Переменная для серого цвета
+$colorgrey: #373018;
+
+//Переменная для белого цвета
+$colorwhite: #ffffff;
+
+//Переменная для темно=синего цвета
+$blue-dark: #181945;
+
+//Щаблоны для десктопной версии
+$desktop: 1280px;
+
+//Щаблоны для планшетной версии
+$tablet: 768px;
+
+//Шаблон для шрифта и цвета хедера
+
+%header {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 28.6px;
+    color: $colorbrowntext_2;
+}
+
+.header-test {
+    @extend %header;
+}
+
+//Шаблон для шрифта и цвета заголовка блока 1
+
+%block1-head {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 81.72px;
+    color: $colorbrowntext_3;
+    word-break: normal;
+}
+
+.block1-test--head {
+    @extend %block1-head;
+}
+
+//Шаблон для шрифта и цвета текста блока 1
+
+%block1-text {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 29.96px;
+    color: $colorbrowntext_3;
+}
+
+.block1-test--text {
+    @extend %block1-text;
+}
+
+//Шаблон для шрифта и цвета заголовка блока 2
+
+%block2-head {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 81.72px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Шаблон для шрифта и цвета текста блока 2
+
+%block2-text {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 29.96px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Шаблон для кнопки "Запись прием" синего цвета
+
+%button1 {
+    font-family: Garamond;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20.25px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+%footer {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 28.6px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Шаблоны для мобильной версии
+//Шаблон для активной кнопки хедера (главная) для мобильной версии
+
+%button2 {
+    font-family: Noto serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: $colorgrey;
+    background-color: $colorblue_2;
+}
+
+//Шаблон для кнопок хедера для мобильной версии
+
+%button3 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Шаблон для кнопки "Запись прием" синего цвета в хедере мобильной версии
+
+%button5 {
+    font-family: Garamond;
+    font-style: normal;
+    font-size: 7px;
+    line-height: 7.88px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Шаблон для шрифта и цвета заголовка блока 1 мобильной версии (главная)
+
+%block1-head-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 34.05px;
+    color: $colorwhite;
+}
+
+//Шаблон для шрифта и цвета текста блока 1 мобильной версии (главная)
+
+%block1-text-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 14.98px;
+    color: $colorwhite;
+    background-color: $colorbrownblock;
+}
+
+//Шаблон для кнопки записи на прием для мобильной версии (главная)
+
+%button4 {
+    font-family: Garamond;
+    font-style: normal;
+    font-size: 7px;
+    line-height: 7.88px;
+    color: $colorbrowntext_3;
+    background-color: $colorbrownblock;
+}
+
+//Шаблон для шрифта и цвета заголовка Frame 6, Frame 10, сретификаты и образование мобильной версии
+
+%block2-head-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 34.05px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Шаблон подзаголовка до/после Frame 10 мобильной версии
+
+%block2-1-head-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 5px;
+    line-height: 24.52px;
+    color: $colorbrowntext_3;
+}
+
+//Шаблон для шрифта и цвета текста с фоном сертификаты и образование мобильной версии
+
+%block3-text-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 14.98px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Шаблон для шрифта и цвета текста сертификаты и образование мобильной версии
+
+%block4-text-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 14.98px;
+    color: $colorbrowntext_3;
+}
+
+//Шаблон для шрифта и цвета заголовка Frame 8 мобильной версии
+
+%block5-head-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 34.05px;
+    color: $colorblue_1;
+}
+
+//Шаблон для шрифта и цвета текста Frame 8 мобильной версии
+
+%block6-text {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 14.98px;
+    color: $colorbrowntext_3;
+}
+
+//Шаблон для футера для мобильной версии
+
+%footer-mob {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: $colorwhite;
+    background-color: $colorblue_1;
+}
+
+//Блок с заголовком и фото
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 100px 60px 100px;
+    background-color: $colorbrownblock;
+
+    &__text-and-photo {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        padding-right: 90px;
+        width: 70%;
+    }
+}
+
+.about__title {
+    margin-top: 0;
+    @extend %block1-head;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.about__text {
+    margin-bottom: 40px;
+    @extend %block1-text;
+
+    &_part1,
+    &_part2 {
+        margin-bottom: 35px;
+    }
+}
+
+.about__wrapper_button {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about__wrapper_button-light {
+    display: none;
+}
+
+.about__photo_desktop {
+    width: 500px;
+}
+
+.about__photo_desktop img {
+    width: 100%;
+}
+
+//Планшет "Блок с заголовком и фото"
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about {
+        flex-direction: column;
+        padding-top: 130px;
+        flex-direction: column;
+        align-items: center;
+
+        &__text-and-photo {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        &__wrapper {
+            padding-right: 0;
+            width: 100%;
+        }
+    }
+
+    .about__title,
+    .about__text {
+        text-align: center;
+    }
+
+    .about__text {
+        font-size: 22px;
+    }
+}
+
+//Мобильная версия "Блок с заголовком и фото"
+
+@media screen and (max-width: 767px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 60px 0 30px 3px;
+        height: 600px;
+        background: url(/assets/images/Irina/Photo_mobile_background.png) no-repeat center center;
+        background-size: cover;
+
+        &__text-and-photo {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        &__wrapper {
+            padding-right: 0;
+            width: 100%;
+        }
+    }
+
+    .about__title {
+        margin: 0 0 70px 0;
+        font-size: 25px;
+        line-height: 35px;
+        color: $colorwhite;
+        text-align: center;
+    }
+
+    .about__text {
+        font-size: 14px;
+        line-height: 18px;
+        color: $colorwhite;
+        text-align: center;
+
+        &_part1,
+        &_part2,
+        &_part3 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .about__wrapper_button {
+        display: none;
+    }
+
+    .about__wrapper_button-light {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__photo_desktop img {
+        display: none;
+    }
+}
+
+//Блок с карточками
+
+.methodology-and-checklists {
+    background-color: $colorblue_1;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 37px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        max-width: 400px;
+        width: 100%;
+        padding: 16px 16px 22px;
+        background-color: $white;
+
+        &__img {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+
+        .methodology-and-checklists__card__title {
+            margin: 0 0 12px;
+            font: 700 16px/18px "Garamond", sans-serif;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: $colorbrowntext_3;
+        }
+
+        .methodology-and-checklists__card__subtitle {
+            margin: 0 0 12px;
+            font: 700 22px/24px "Garamond", sans-serif;
+            color: $colorblue_1;
+
+            &-main {
+                margin-bottom: 15px;
+            }
+        }
+
+        .methodology-and-checklists__card__text {
+            margin: 0 0 15px;
+            font: 500 16px/22px "Eudoxus Sans", sans-serif;
+            color: gray;
+        }
+
+        .methodology-and-checklists__card__list {
+            font: 500 16px/22px "Eudoxus Sans", sans-serif;
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 10px;
+            color: gray;
+
+            &>li {
+                margin-bottom: 12px;
+            }
+        }
+
+        .methodology-and-checklists__card__button {
+            margin: auto auto 0;
+            background-color: $colorblue_1;
+            color: $white;
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 250px;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            font: 600 18px/26px "Garamond", sans-serif;
+
+            &:hover {
+                box-shadow: 0 3px 10px 2px #30444f;
+                transition: box-shadow 0.2s ease-out;
+            }
+        }
+    }
+
+    .methodology-and-checklists__wrapper {
+        margin: 0 auto;
+        padding: 110px 30px 40px;
+    }
+
+    &__info-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .methodology-and-checklists__title {
+        margin: 0 0 15px;
+        font: 400 25px/36px "Noto Serif", sans-serif;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: $white;
+        word-break: break-word;
+    }
+
+    &__about,
+    &__about-second {
+        margin: 0 auto 25px;
+        font: 400 14px/18px "Noto Serif", sans-serif;
+        letter-spacing: 0.04em;
+        color: $white;
+    }
+
+    @media (min-width: $tablet) {
+        &__cards {
+            flex-direction: row;
+            justify-content: center;
+            gap: 37px;
+            width: 100%;
+        }
+
+        &__card {
+            align-self: stretch;
+        }
+
+        &__about,
+        &__about-second {
+            font: 400 22px/30px "Noto Serif", sans-serif;
+        }
+
+        .methodology-and-checklists__title {
+            font: 400 40px/86px "Noto Serif", sans-serif;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        & .d-md-block {
+            display: none;
+        }
+
+        .methodology-and-checklists__wrapper {
+            padding: 70px 30px 40px;
+        }
+    }
+}

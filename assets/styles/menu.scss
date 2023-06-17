@@ -1,0 +1,141 @@
+//Переменная для белого цвета
+$white: #ffffff;
+@import 'style.scss';
+
+
+.header {
+   position: fixed;
+   background-color: $white ;
+   width: 100%;
+   z-index: 3;
+}
+
+.menu {
+   max-width: 100%;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+
+   &:first-child {
+      margin-left: 51px;
+
+      .logo-pic {
+         padding-top: 11px;
+      }
+   }
+
+   &:last-child {
+      margin-right: 51px;
+   }
+}
+
+.main-btn {
+   justify-self: flex-end;
+   padding-top: 17px;
+}
+
+.menu__list {
+   max-width: 100%;
+   list-style-type: none;
+
+   .menu__item {
+      padding: 8px 20px;
+      display: inline;
+      float: left;
+
+      .menu__link {
+         position: relative;
+         display: block;
+         font: 300 21px/29px 'Noto Serif', lighter;
+         text-align: center;
+         text-transform: uppercase;
+         text-decoration: none;
+         color: $colorbrowntext_2 ;
+         transition: 0.5s;
+
+         &::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: $colorblue_1;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+         }
+
+         &:hover {
+            color: $colorbrowntext_1 ;
+         }
+
+         &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+         }
+      }
+   }
+}
+
+@media (max-width:1023px) {
+   ul {
+      padding: 0;
+   }
+
+   .menu {
+      min-width: 900px;
+      flex-wrap: nowrap;
+      padding: 5px;
+   }
+
+   .menu__list {
+      padding-right: 10px;
+   }
+
+   .menu__list .menu__item {
+      padding: 10px;
+   }
+}
+
+@media (max-width:830px) {
+   .menu {
+      display: none;
+   }
+}
+
+@media (min-width:830px) {
+   .wrapper {
+      display: none;
+   }
+}
+
+@media(min-width:701px)and(max-width:959px) {
+   .menu {
+      margin: 7px;
+
+      &:first-child {
+         margin-left: 5px;
+      }
+
+      &:last-child {
+         margin-right: 5px;
+      }
+   }
+
+   .menu__list {
+      display: flex;
+      font-size: 10px;
+   }
+
+   .menu__link {
+      font-size: 18px;
+   }
+}
+
+ul {
+   margin: 0 !important;
+}

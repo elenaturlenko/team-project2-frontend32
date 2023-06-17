@@ -1,0 +1,343 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.header-test {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 28.6px;
+  color: #131108;
+}
+
+.about__title, .block1-test--head {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 81.72px;
+  color: #161202;
+  word-break: normal;
+}
+
+.about__text, .block1-test--text {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 29.96px;
+  color: #161202;
+}
+
+.footer__address {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16.34px;
+  color: #ffffff;
+  background-color: #405a69;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 100px 60px 100px;
+  background-color: #f0eeea;
+}
+.about__text-and-photo {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+.about__wrapper {
+  padding-right: 90px;
+  width: 70%;
+}
+
+.about__title {
+  margin-top: 0;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin-bottom: 40px;
+}
+.about__text_part1, .about__text_part2 {
+  margin-bottom: 35px;
+}
+
+.about__wrapper_button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about__wrapper_button-light {
+  display: none;
+}
+
+.about__photo_desktop {
+  width: 500px;
+}
+
+.about__photo_desktop img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about {
+    flex-direction: column;
+    padding-top: 130px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__text-and-photo {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .about__wrapper {
+    padding-right: 0;
+    width: 100%;
+  }
+  .about__title,
+.about__text {
+    text-align: center;
+  }
+  .about__text {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 0 30px 3px;
+    height: 600px;
+    background: url(/assets/images/Irina/Photo_mobile_background.png) no-repeat center center;
+    background-size: cover;
+  }
+  .about__text-and-photo {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .about__wrapper {
+    padding-right: 0;
+    width: 100%;
+  }
+  .about__title {
+    margin: 0 0 70px 0;
+    font-size: 25px;
+    line-height: 35px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .about__text_part1, .about__text_part2, .about__text_part3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .about__wrapper_button {
+    display: none;
+  }
+  .about__wrapper_button-light {
+    display: flex;
+    justify-content: center;
+  }
+  .about__photo_desktop img {
+    display: none;
+  }
+}
+.methodology-and-checklists {
+  background-color: #405a69;
+}
+.methodology-and-checklists__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.methodology-and-checklists__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 100%;
+  padding: 16px 16px 22px;
+  background-color: #ffffff;
+}
+.methodology-and-checklists__card__img {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__title {
+  margin: 0 0 12px;
+  font: 700 16px/18px "Garamond", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #161202;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__subtitle {
+  margin: 0 0 12px;
+  font: 700 22px/24px "Garamond", sans-serif;
+  color: #405a69;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__subtitle-main {
+  margin-bottom: 15px;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__text {
+  margin: 0 0 15px;
+  font: 500 16px/22px "Eudoxus Sans", sans-serif;
+  color: gray;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__list {
+  font: 500 16px/22px "Eudoxus Sans", sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px;
+  color: gray;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__list > li {
+  margin-bottom: 12px;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__button {
+  margin: auto auto 0;
+  background-color: #405a69;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 250px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font: 600 18px/26px "Garamond", sans-serif;
+}
+.methodology-and-checklists__card .methodology-and-checklists__card__button:hover {
+  box-shadow: 0 3px 10px 2px #30444f;
+  transition: box-shadow 0.2s ease-out;
+}
+.methodology-and-checklists .methodology-and-checklists__wrapper {
+  margin: 0 auto;
+  padding: 110px 30px 40px;
+}
+.methodology-and-checklists__info-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.methodology-and-checklists .methodology-and-checklists__title {
+  margin: 0 0 15px;
+  font: 400 25px/36px "Noto Serif", sans-serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  word-break: break-word;
+}
+.methodology-and-checklists__about, .methodology-and-checklists__about-second {
+  margin: 0 auto 25px;
+  font: 400 14px/18px "Noto Serif", sans-serif;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .methodology-and-checklists__cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 37px;
+    width: 100%;
+  }
+  .methodology-and-checklists__card {
+    align-self: stretch;
+  }
+  .methodology-and-checklists__about, .methodology-and-checklists__about-second {
+    font: 400 22px/30px "Noto Serif", sans-serif;
+  }
+  .methodology-and-checklists .methodology-and-checklists__title {
+    font: 400 40px/86px "Noto Serif", sans-serif;
+  }
+}
+@media (max-width: 768px) {
+  .methodology-and-checklists .d-md-block {
+    display: none;
+  }
+  .methodology-and-checklists .methodology-and-checklists__wrapper {
+    padding: 70px 30px 40px;
+  }
+}
+
+.wrapper-footer {
+  width: 100%;
+  padding: 30px 20px;
+  border-top: 2px solid #2e4652;
+  background-color: #405a69;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 0 30px 0;
+}
+
+.footer__link a {
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+}
+
+.footer__link img {
+  width: 45px;
+}
+
+.footer__link img:hover {
+  box-shadow: 0 0 20px rgb(247, 235, 235);
+  border-radius: 100px;
+}
+
+.footer__address {
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+}
+.footer__address:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer__address span {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__link img {
+    width: 70px;
+  }
+  .footer__address {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=footer.css.map */

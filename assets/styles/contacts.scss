@@ -1,0 +1,139 @@
+@import "style.scss";
+
+h1,
+p {
+    margin: 0;
+}
+
+.contacts {
+    background-color: $colorbrownblock;
+    width: 100%;
+    padding: 90px 20px 0 20px;
+}
+
+.contacts__title {
+    font: normal 400 25px/34px 'Noto Serif', serif;
+    color: $colorbrowntext_3;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.contacts__map {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.map__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 55px 0;
+}
+
+.contacts__container-data {
+    @extend %block6-text;
+}
+
+@media screen and (max-width:767px) {
+    .contacts {
+        padding-top: 50px;
+    }
+
+    .contacts__title {
+        padding: 30px;
+    }
+
+    .contacts__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contacts__container-data {
+        @extend %block6-text;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .contacts__container-item {
+        font: normal 400 15px/25px 'Noto Serif', serif;
+        padding: 4px;
+    }
+
+    .contacts__container-pics {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .contacts__container-pic {
+        padding: 10px;
+    }
+
+    .contacts__container-adress {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .contacts__title {
+        font: normal 400 40px/60px 'Noto Serif', serif;
+        color: $colorbrowntext_3;
+        word-break: normal;
+    }
+
+    .contacts__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contacts__container-data {
+        font: normal 400 22px/29px 'Noto Serif', serif;
+        color: $colorbrowntext_3;
+    }
+
+    .contacts__container-pic {
+        display: flex;
+        width: 120%;
+        padding: 18px;
+    }
+
+    .contacts__container-adress {
+        font: normal 400 20px/25px 'Noto Serif', serif;
+        width: 100%;
+        text-align: center;
+        padding: 45px 0 50px 0;
+    }
+
+    .contacts__container-item {
+        padding: 34px;
+    }
+
+    .map__wrapper {
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 55px;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .contacts__title {
+        padding: 30px;
+    }
+
+    .contacts__container-pic {
+        width: 80%;
+        padding: 10px 0;
+    }
+
+    .contacts__container-item {
+        padding: 15px 0;
+    }
+}

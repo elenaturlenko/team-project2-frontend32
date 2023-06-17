@@ -1,0 +1,86 @@
+@import "style.scss";
+
+.examples-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorblue_1;
+  padding: 50px 0px 30px;
+}
+
+.examples-wrapper__title,
+.examples-subtitle {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $colorwhite;
+}
+
+.examples-wrapper__title {
+  padding: 35px 0px 10px;
+  margin: -25px;
+  @extend %block2-head-mob;
+  font-size: 14px;
+}
+
+.examples-subtitle {
+  padding: 10px;
+  @extend %block2-1-head-mob;
+  font-size: 9px;
+}
+
+.examples {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__text-slide {
+    font: 400 16px/22px "Noto Serif", sans-serif;
+  }
+
+  &__img-slide-4_direction {
+    transform: rotate(180deg);
+  }
+
+  &__img-slide-5_direction {
+    transform: rotate(-90deg);
+  }
+}
+
+.examples p {
+  margin-bottom: 0;
+}
+
+.carousel-caption {
+  z-index: 0;
+}
+
+.carousel-indicators {
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-wrapper {
+    padding-bottom: 40px;
+  }
+
+  .examples-wrapper__title {
+    font-size: 25px;
+    margin-bottom: -50px;
+    padding-top: 60px;
+  }
+
+  .examples-subtitle {
+    font-size: 13px;
+  }
+
+  .examples__text-slide {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .examples {
+    width: 70%;
+  }
+}

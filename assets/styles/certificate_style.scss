@@ -1,0 +1,89 @@
+/* Блок образование и карусель сертификатов */
+@import "style.scss";
+
+
+.certificates-and-education {
+  background-color: $colorblue_1;
+  padding: 70px 0px 10px;
+}
+
+.certificates-and-education__wrapper {
+  padding: 10px 5% 8%;
+}
+
+.certificates-and-education__carousel-container {
+  display: grid;
+  grid-template-rows: 40% 30% 30%;
+  grid-template-columns: 65% 35%;
+  grid-template-areas:
+    "vert li"
+    "hor hor"
+    "dip dip";
+  grid-gap: 1%;
+}
+
+.certificates-and-education__carousel_vertical {
+  grid-area: vert;
+}
+
+.certificates-and-education__list {
+  grid-area: li;
+}
+
+.certificates-and-education__carousel_horizontal {
+  grid-area: hor;
+}
+
+.certificates-and-education__carousel_diploma {
+  grid-area: dip;
+}
+
+.certificates-and-education__heading {
+  padding: 40px 0px 30px;
+  color: $colorwhite;
+  font: 400 40px "Noto Serif", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.certificates-and-education__list_ul {
+  margin: 5% 2%;
+  list-style-image: url("../../assets/images/certificates/list-icon.png");
+  list-style-position: inside;
+  text-align: center;
+
+}
+
+.certificates-and-education__list_item {
+  margin-bottom: 3%;
+  font: 400 22px "Noto Serif", sans-serif;
+  color: $colorwhite;
+  ;
+}
+
+.certificates-and-education__list_item:hover {
+  box-shadow: 0 3px 10px 2px #30444f;
+  transition: box-shadow 0.2s ease-out;
+}
+
+@media screen and (max-width: $tablet) {
+  .certificates-and-education__carousel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .certificates-and-education__heading {
+    padding: 5px 0px 20px;
+    color: $colorbrownblock;
+    font: 400 25px "Noto Serif", sans-serif;
+
+  }
+
+  .certificates-and-education__list_item {
+    margin-bottom: 1%;
+    font: 400 14px "Noto Serif", sans-serif;
+    color: $colorbrownblock;
+  }
+}

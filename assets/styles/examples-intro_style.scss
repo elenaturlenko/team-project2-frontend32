@@ -1,0 +1,94 @@
+@import "style.scss";
+
+h2 {
+    margin: 0;
+}
+
+.examples-work__wrapper {
+    margin: 0 auto;
+    background-color: $colorbrownblock;
+}
+
+.examples-work__heading {
+    color: #161202;
+    font: 400 25px/36px "Noto Serif", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.examples-work__intro_pic {
+    width: 40%;
+}
+
+
+.examples-work__intro_pic:hover {
+    transition: filter 0.5s linear;
+    filter: blur(1px) opacity(60%) drop-shadow(4px 4px 4px black);
+}
+
+.examples-work__intro {
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+}
+
+.button {
+    /* block */
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* decoration */
+    border-radius: 10px;
+    /* font decoration */
+    text-decoration: none;
+    text-align: center;
+    @extend %button1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* animation */
+    transition: all 1s;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $colorblue_1;
+        z-index: -2;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($colorblue_1, 15%);
+        transition: all 1s;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #fff;
+
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .examples-work__heading {
+        font: 400 40px/86px "Noto Serif", sans-serif;
+        padding: 30px 0;
+    }
+}

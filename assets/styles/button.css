@@ -1,0 +1,251 @@
+.header-test {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 28.6px;
+  color: #131108;
+}
+
+.block1-test--head {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 81.72px;
+  color: #161202;
+  word-break: break-word;
+}
+
+.block1-test--text {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 29.96px;
+  color: #1a1919;
+}
+
+.methodology-and-checklists {
+  background-color: #405a69;
+}
+.methodology-and-checklists__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  width: 100%;
+}
+.methodology-and-checklists__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 100%;
+  padding: 16px 16px 22px;
+  background-color: #ffffff;
+}
+.methodology-and-checklists__card__img {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.methodology-and-checklists__card__title {
+  margin: 0 0 12px;
+  font: 700 12px/16px "Garamond", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #161202;
+}
+.methodology-and-checklists__card__subtitle {
+  margin: 0 0 12px;
+  font: 700 18px/24px "Eudoxus Sans", sans-serif;
+  color: #181945;
+}
+.methodology-and-checklists__card__subtitle-main {
+  margin-bottom: 15px;
+}
+.methodology-and-checklists__card__text {
+  margin: 0 0 36px;
+  font: 500 16px/22px "Eudoxus Sans", sans-serif;
+  color: #c5c1c1;
+}
+.methodology-and-checklists__card__list {
+  font: 500 16px/22px "Eudoxus Sans", sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px;
+  color: #c5c1c1;
+}
+.methodology-and-checklists__card__list > li {
+  margin-bottom: 4px;
+}
+.methodology-and-checklists__card__button {
+  margin: auto auto 0;
+  background-color: #405a69;
+  color: #ffffff;
+  padding: 20px 0;
+  border-radius: 15px;
+  max-width: 250px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font: 600 18px/26px "Garamond", sans-serif;
+}
+.methodology-and-checklists__card__button:hover {
+  box-shadow: 0 3px 10px 2px #30444f;
+  transition: box-shadow 0.2s ease-out;
+}
+.methodology-and-checklists__wrapper {
+  margin: 0 auto;
+  padding: 72px 20px;
+}
+.methodology-and-checklists__info-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.methodology-and-checklists__title {
+  margin: 0 0 22px;
+  font: 400 28px/36px "Noto Serif", sans-serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  word-break: break-word;
+}
+.methodology-and-checklists__about, .methodology-and-checklists__about-second {
+  margin: 0 auto 22px;
+  font: 400 14px/18px "Noto Serif", sans-serif;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .methodology-and-checklists__cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 37px;
+    width: 100%;
+  }
+  .methodology-and-checklists__card {
+    align-self: stretch;
+  }
+  .methodology-and-checklists__title {
+    font: 400 60px/86px "Noto Serif", sans-serif;
+  }
+  .methodology-and-checklists__about, .methodology-and-checklists__about-second {
+    font: 400 22px/30px "Noto Serif", sans-serif;
+  }
+}
+@media (max-width: 768px) {
+  .methodology-and-checklists .d-md-block {
+    display: none;
+  }
+}
+
+.overflow-hidden {
+  overflow-x: hidden;
+}
+
+.button {
+  /* block */
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  /* decoration */
+  border-radius: 10px;
+  /* font decoration */
+  text-decoration: none;
+  text-align: center;
+  font: normal 400 16px/144.52% "EB Garamond", serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  /* animation */
+  transition: all 1s;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #405a69;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #233139;
+  transition: all 1s;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+/* optional reset for presentation */
+.light-button {
+  /* block */
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  /* decoration */
+  border-radius: 10px;
+  /* font decoration */
+  text-align: center;
+  font: normal 400 16px/144.52% "EB Garamond", serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #161202;
+  text-decoration: none;
+  /* animation */
+  transition: all 1s;
+}
+.light-button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F0EEEA;
+  z-index: -2;
+}
+.light-button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #d0cabd;
+  transition: all 1s;
+  z-index: -1;
+}
+.light-button:hover {
+  color: #fff;
+}
+.light-button:hover:before {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .button {
+    padding: 10px 10px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .light-button {
+    padding: 10px 10px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=button.css.map */
